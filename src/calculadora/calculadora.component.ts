@@ -19,12 +19,10 @@ export class calculadoraComponent {
 
   addHTMLnumber(numero: string): void {
     this.resultado += `${numero}`;
-    this.numeroNumber = parseInt(numero);
-    this.conta += eval(numero);
   }
 
   addHTMLresult(): void {
-    // this.resultado = eval;
+    this.resultado = `${this.conta}`;
   }
 
   addHTMLtext(operacao: string): void {
@@ -33,7 +31,7 @@ export class calculadoraComponent {
   }
 
   removeHTMLtext(remover: String): void {
-    this.remover = `${remover}`;
+    this.resultado = `${remover}`;
   }
 
   clickBtn0(): void {
@@ -89,7 +87,7 @@ export class calculadoraComponent {
   }
 
   clickBtnMultiplicacao(): void {
-    this.addHTMLtext("x");
+    this.addHTMLtext("*");
   }
 
   clickBtnApagar(): void {
@@ -97,7 +95,7 @@ export class calculadoraComponent {
   }
 
   clickBtnIgual(): void {
-    // let numberResult=parseInt(this.htmlthatiwant);
-    // console.log(numberResult);
+    this.conta = eval(String(this.resultado));
+    this.addHTMLresult();
   }
 }
