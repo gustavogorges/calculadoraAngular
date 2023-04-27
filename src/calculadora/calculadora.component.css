@@ -6,12 +6,12 @@
 }
 
 .calculadoraStyle {
-    height: 500px;
+    height: 600px;
     width: 400px;
     background-color: orange;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     padding: 10px;
     padding-top: 20px;
 }
@@ -27,7 +27,7 @@
 }
 
 .botaoCalc {
-    height: 100px;
+    height: 80px;
     width: 100px;
     display: flex;
     justify-content: center;
@@ -37,111 +37,112 @@
 .botao0 {
     grid-column-start: 2;
     grid-column-end: 3;
-    grid-row-start: 5;
-    grid-row-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 6;
 }
 
 .botao1 {
     grid-column-start: 1;
     grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
 }
 
 .botao2 {
     grid-column-start: 2;
     grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
 }
 
 .botao3 {
     grid-column-start: 3;
     grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
 }
 
 .botao4 {
     grid-column-start: 1;
     grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 4;
 }
 
 .botao5 {
     grid-column-start: 2;
     grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 4;
 }
 
 .botao6 {
     grid-column-start: 3;
     grid-column-end: 4;
-    grid-row-start: 3;
-    grid-row-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 4;
 }
 
 .botao7 {
     grid-column-start: 1;
     grid-column-end: 2;
-    grid-row-start: 4;
-    grid-row-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 5;
 }
 
 .botao8 {
     grid-column-start: 2;
     grid-column-end: 3;
-    grid-row-start: 4;
-    grid-row-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 5;
 }
 
 .botao9 {
     grid-column-start: 3;
     grid-column-end: 4;
-    grid-row-start: 4;
-    grid-row-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 5;
 }
 
 .botaoIgual {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 6;
+}
+
+.botaoAdicao {
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 5;
     grid-row-end: 5;
 }
 
-.botaoAdicao {
+.botaoSubtracao {
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 4;
     grid-row-end: 4;
 }
 
-.botaoSubtracao {
+.botaoMultiplicacao {
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 3;
     grid-row-end: 3;
 }
 
-.botaoMultiplicacao {
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 2;
-    grid-row-end: 2;
-}
-
 .botaoDivisao {
     grid-column-start: 3;
     grid-column-end: 4;
-    grid-row-start: 5;
-    grid-row-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 6;
 }
 
 .botaoCE {
     grid-column-start: 1;
     grid-column-end: 2;
-    grid-row-start: 5;
-    grid-row-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 6;
 }
+

@@ -12,6 +12,7 @@ export class calculadoraComponent {
   operacao: string;
   remover: string = "";
   conta;
+ 
   // number1:Number = 0;
   // number2:Number = 0;
   // number3:Number = 0;
@@ -97,5 +98,10 @@ export class calculadoraComponent {
   clickBtnIgual(): void {
     this.conta = eval(String(this.resultado));
     this.addHTMLresult();
+  }
+
+  clickBtnApagar1(): void {
+    let tamanhoDisplay = this.resultado.length;
+    this.resultado = this.resultado.substring(0, tamanhoDisplay -1);
   }
 }
